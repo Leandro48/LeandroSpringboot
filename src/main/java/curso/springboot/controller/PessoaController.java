@@ -15,7 +15,7 @@ import org.springframework.web.servlet.ModelAndView;
 import curso.springboot.model.Pessoa;
 import curso.springboot.repository.PessoaRepository;
 
-@RequestMapping("/api")
+
 @Controller
 public class PessoaController {
 	//fazendo a injeção de dependência da Interface PessoaRepository

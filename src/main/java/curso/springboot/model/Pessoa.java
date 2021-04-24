@@ -6,6 +6,15 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity //anotação entity para criar sozinho uma tabela no banco de dados
 public class Pessoa implements Serializable{//toda classe que tem persistência implementa serializable
 
@@ -23,34 +32,4 @@ public class Pessoa implements Serializable{//toda classe que tem persistência 
 	private String sobrenome;
 	
 	private int idade;
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-
-	public String getSobrenome() {
-		return sobrenome;
-	}
-
-	public void setSobrenome(String sobrenome) {
-		this.sobrenome = sobrenome;
-	}
-	public int getIdade() {
-		return idade;
-	}
-	public void setIdade(int idade) {
-		this.idade = idade;
-	}
 }
